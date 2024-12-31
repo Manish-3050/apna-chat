@@ -5,13 +5,12 @@ import { Flex, Layout } from 'antd';
 import { Content, Footer, Header } from 'antd/es/layout/layout';
 import Sider from 'antd/es/layout/Sider';
 function App() {
-
   return (
     <>
-      <div className='w-max'>
+      <div >
         <Flex gap="middle" wrap>
           <Layout className='layoutStyle'>
-            <Sider width="25%" className='sider'>
+            <Sider width='20%' className='sider'>
               <Sidebar />
             </Sider>
             <Layout>
