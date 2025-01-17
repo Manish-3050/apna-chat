@@ -1,25 +1,15 @@
 import 'antd/dist/reset.css'; // Imports Ant Design's styles
 import './App.css'
-import Sidebar from './components/Sidebar';
-import { Flex, Layout } from 'antd';
-import { Content, Footer, Header } from 'antd/es/layout/layout';
-import Sider from 'antd/es/layout/Sider';
+import { Dashboard } from './components/Dashboard';
+import { Layout } from 'antd';
 function App() {
   return (
     <>
       <div >
-        <Flex gap="middle" wrap>
-          <Layout className='layoutStyle'>
-            <Sider width='20%' className='sider'>
-              <Sidebar />
-            </Sider>
-            <Layout>
-              <Header className='headerStyle' >Header</Header>
-              <Content className='contentStyle'  >Content</Content>
-              <Footer className='footerStyle' >Footer</Footer>
-            </Layout>
-          </Layout>
-        </Flex>
+      <Layout style={{ height: '100vh' }}>
+      <Dashboard />
+    </Layout>
+
       </div>
     </>
   )
